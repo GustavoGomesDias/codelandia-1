@@ -65,34 +65,31 @@ header div.header_container a {
   color: var(--white);
 }
 
-header div.search_container {
-  display: grid;
-  grid-template-columns: auto auto;
-
+header div.search_container form {
+  display: flex;
+  align-items: center;
   border-radius: 5px;
   border: none;
   background-color: rgba(255, 255, 255, 0.2);
-
 }
 
-header div.search_container input[type='search'] {
+header div.search_container form input[type='search'] {
   width: 70vw;
   height: 40px;
   background: none;
   border-radius: 5px;
   border: none;
-
   color: var(--white);
   font-family: 'Inter';
   font-weight: 500;
 }
 
-header div.search_container input[type='search']::placeholder {
+header div.search_container form input[type='search']::placeholder {
   color: var(--white);
   opacity: 0.5;
 }
 
-header div.search_container button.search_button {
+header div.search_container form button.search_button {
   background: url('/assets/icons/search.svg') center no-repeat;
   height: 40px;
   width: 40px;
