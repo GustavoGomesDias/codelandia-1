@@ -1,11 +1,83 @@
 @import "variaveis.css";
 
+@font-face {
+  font-family: 'LexendDeca';
+  src: url('/fontes/LexendDeca-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fontes/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-size: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/fontes/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-size: normal;
+}
+
+
 * {
   box-sizing: boder-box;
   padding: 0;
   margin: 0;
 }
 
-html {
-  background-color: var(--white);
+header {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--white);
+  font-family: "LexendDeca", sans-serif;
+  background-image: var(--linear);
+}
+
+header.header {
+  width: 90vw;
+  height: 104px;
+  top: 0;
+  left: 0;
+}
+
+header div.header_container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 3em;
+}
+
+
+header div.header_container h2.blog {
+  text-align: end;
+}
+
+header div.header_container a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+header div.search_container input[type='search'] {
+  width: 70vw;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: none;
+
+  color: var(--white);
+  font-family: 'Inter';
+  font-weight: 500;
+}
+
+header div.search_container input[type='search']::placeholder {
+  color: var(--white);
+  opacity: 0.5;
 }
