@@ -90,7 +90,7 @@ header div.search_container form input[type='search']::placeholder {
 }
 
 header div.search_container form button.search_button {
-  background: url('/assets/icons/search.svg') center no-repeat;
+  background: url('../assets/icons/search.svg') center no-repeat;
   height: 40px;
   width: 40px;
   cursor: pointer;
