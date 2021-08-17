@@ -8,13 +8,13 @@
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: 'Inter-Regular';
   src: url('/fontes/Inter-Regular.ttf') format('truetype');
   font-weight: normal;
   font-size: normal;
 }
 @font-face {
-  font-family: 'Inter';
+  font-family: 'Inter-Medium';
   src: url('/fontes/Inter-Medium.ttf') format('truetype');
   font-weight: 500;
   font-size: normal;
@@ -28,7 +28,7 @@
 }
 
 header {
-  position: absolute;
+  position: sticky;
   height: 200px;
   width: 100%;
   left: 0;
@@ -38,7 +38,7 @@ header {
   justify-content: center;
 
   color: var(--white);
-  font-family: "LexendDeca", sans-serif;
+  font-family: "Inter-Regular", sans-serif;
   background-image: var(--linear);
 }
 
@@ -80,7 +80,7 @@ header div.search_container form input[type='search'] {
   border-radius: 5px;
   border: none;
   color: var(--white);
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
 }
 
@@ -96,8 +96,4 @@ header div.search_container form button.search_button {
   cursor: pointer;
   border-radius: 5px;
   border: none;
-}
-
-header div.search_container button.search_button svg {
-  background: url('/assets/icons/search.svg') center no-repeat;
 }
