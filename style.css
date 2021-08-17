@@ -1,0 +1,11 @@
+@import "variaveis.css";
+
+* {
+  box-sizing: boder-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: var(--white);
+}
