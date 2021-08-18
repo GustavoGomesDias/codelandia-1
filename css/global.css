@@ -1,0 +1,31 @@
+@import "variaveis.css";
+* {
+  box-sizing: boder-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+@font-face {
+  font-family: 'LexendDeca';
+  src: url('/fontes/LexendDeca-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('/fontes/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('/fontes/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-size: normal;
+}

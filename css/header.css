@@ -1,32 +1,5 @@
 @import "variaveis.css";
 
-@font-face {
-  font-family: 'LexendDeca';
-  src: url('/fontes/LexendDeca-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-size: normal;
-}
-
-@font-face {
-  font-family: 'Inter-Regular';
-  src: url('/fontes/Inter-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-size: normal;
-}
-@font-face {
-  font-family: 'Inter-Medium';
-  src: url('/fontes/Inter-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-size: normal;
-}
-
-
-* {
-  box-sizing: boder-box;
-  padding: 0;
-  margin: 0;
-}
-
 header {
   position: sticky;
   height: 200px;
@@ -38,7 +11,7 @@ header {
   justify-content: center;
 
   color: var(--white);
-  font-family: "Inter-Regular", sans-serif;
+  font-family: "Inter-Regular";
   background-image: var(--linear);
 }
 
@@ -66,6 +39,7 @@ header div.header_container a {
 }
 
 header div.search_container form {
+  width: 70vw;
   display: flex;
   align-items: center;
   border-radius: 5px;
@@ -73,20 +47,33 @@ header div.search_container form {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-header div.search_container form input[type='search'] {
+header div.search_container form input[type='text'] {
   width: 70vw;
   height: 40px;
   background: none;
   border-radius: 5px;
   border: none;
   color: var(--white);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter-Medium';
   font-weight: 500;
 }
 
-header div.search_container form input[type='search']::placeholder {
+header div.search_container form input[type='text']::placeholder {
   color: var(--white);
   opacity: 0.5;
+}
+
+header div.search_container form button.clear_button {
+  background: url('../assets/icons/clear-x.svg') center no-repeat;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+header div.search_container form button.hidden {
+  visibility: hidden;
 }
 
 header div.search_container form button.search_button {

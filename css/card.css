@@ -1,0 +1,53 @@
+@import "variaveis.css";
+
+main.main {
+  flex-wrap: wrap;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+main.main section.card {
+  margin: 1.5em;
+  width: 70vw;
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  font-family: "LexendDeca";
+}
+
+main.main section.card div.date-like {
+  padding: 1.1em;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text);
+}
+
+main.main section.card div.date-like button {
+  width: 24px;
+  height: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+main.main section.card div.date-like button.like {
+  background: url('/assets/icons/heart-outline.svg') center no-repeat;
+}
+
+main.main section.card div.date-like button.liked {
+  background: url('/assets/icons/heart-full-color.svg') center no-repeat;
+}
+
+main.main section.card article.article {
+  padding: 0 1.1em 1.1em 1.1em;
+}
+
+main.main section.card article.article h2.title {
+  color: var(--title);
+}
+
+main.main section.card article.article p.description {
+  color: var(--text);
+}
