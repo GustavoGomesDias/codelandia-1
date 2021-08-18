@@ -12,3 +12,6 @@
   }
   ...
   ```
+- [ ] Bug na hora do clear
+  - O x some mesmo que ainda tenha texto lá;
+  - Na vercel o x não está limpando o campo de pesquisa
