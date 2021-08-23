@@ -58,6 +58,10 @@ header div.search_container form input[type='text'] {
   font-weight: 500;
 }
 
+header div.search_container form input[type='text']:focus {
+  outline: none;
+}
+
 header div.search_container form input[type='text']::placeholder {
   color: var(--white);
   opacity: 0.5;
